@@ -1,10 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     padding: 0;
     margin: 0;
 }
 
-.banner {
-    width: 85%;
+body {
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    cursor: url(../assets/avocado_icon.png), auto;
+}
+
+header {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
 }
 
 .fact-container {
@@ -31,4 +45,51 @@ section img {
 
 .fact-text {
     width: 45%;
+}
+
+/* testing footer css */
+#footer {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    padding: 1.5em 0;
+}
+
+#footer-text {
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    color: #FFF9D1;
+    width: 70%;
+    border-bottom: 1px solid #FFF9D1;
+    padding: 0 0 .15em .85em;
+    margin: 1em auto;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    
+}
+#footer-text span{
+    font-size: .75em;
+}
+
+#footer-links {
+    width: 90%;
+    margin: auto;
+}
+#footer-links ul {
+    display: flex; 
+    justify-content: center;
+}
+#footer-links a {
+    font-family: "Raleway", sans-serif;
+    font-size: .9em;
+    font-weight: 500;
+    color: #FFF9D1;
+}
+
+#footer p {
+    color: black;
+    font-size: .75em;
+    font-weight: 400;
+    margin-top: 2em;
 }
