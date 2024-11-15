@@ -6,42 +6,40 @@ body, h1, h2, p, nav, ul, li, a {
 }
 
 body {
-    font-family: 'Arial', sans-serif; /* Font styling */
-    background-color: #FFF9D1;  /* Background color */
-    color: #333;  /* Default text color */
-    padding: 20px;
-    line-height: 1.6;  /* For better readability */
+    font-family: 'Arial', sans-serif;
+    background-color: #FFF9D1;
+    color: #333;
+    padding: 0;
+    margin: 0;
+    line-height: 1.6;
+    
+    background-image: url('../assets/avocado-pattern.jpg');
+    background-size: contain;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: rgba(255, 249, 209, 0.7);
+    background-blend-mode: overlay;
 }
 
 /* Header Styling */
 header {
     background-color: #5DC7A4;  /* Background color */
-    color: white;
-    padding: 20px 40px;  /* Add extra padding for space */
+    color: black;
+    padding: 15px 15px;
     display: flex;
-    justify-content: space-between;  /* To push title to the left and menu to the right */
-    align-items: center;  /* Vertically align items */
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
     position: relative;
+    padding-top: 20px;
 }
 
 header h1 {
     font-size: 3em;
-    margin: 0;  /* Remove any default margins */
-    position: absolute;
-    top: 20px;  /* Adjust the vertical position */
-    left: 20px;  /* Adjust the horizontal position */
-    color: black;  /* Change text color to black */
-}
-
-header p {
-    font-size: 1.2em;
-    margin-top: 40px;  /* Adds spacing below the title */
-    margin-left: 20px;  /* Align with the title on the left */
-}
-
-/* Navigation Styling */
-nav {
-    /* No extra changes needed here, as the flexbox is handled by the header */
+    margin: 0;
+    color: black;
 }
 
 nav ul {
@@ -50,43 +48,58 @@ nav ul {
 }
 
 nav ul li {
-    margin-left: 20px;  /* Space between navigation items */
+    margin-left: 20px;
 }
 
 nav ul li a {
-    color: black;  /* Change text color to black */
+    color: black;
     text-decoration: none;
     font-size: 1.2em;
     transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #FFF9D1;  /* Hover effect using the background color */
+    color: #FFF9D1;
 }
 
 /* Main Content Styling */
 main {
-    max-width: 1200px;
-    margin: 40px auto;
-    text-align: center;
+    padding: 40px 20px;
 }
 
-/* Section Styling */
-section {
-    margin-bottom: 40px;
+/* Unified Content Box (Single Orange Box) */
+.content-box {
+    background-color: #F0983E;  /* Orange background */
+    padding: 20px;
+    max-width: 900px;  /* Set a maximum width */
+    height: 400px;  /* Set a fixed height to make it more square */
+    margin: 0;  /* Remove default margin */
+    position: absolute;  /* Use absolute positioning */
+    top: 50%;  /* Position the box 50% from the top of the viewport */
+    left: 50%;  /* Position the box 50% from the left of the viewport */
+    transform: translate(-50%, -50%);  /* Offset the box to truly center it */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: black;  /* Black text color */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  /* Space out sections inside the box */
 }
 
-/* Section Titles */
-h2 {
-    font-size: 2em;
-    color: #3A3F87;
-    margin-bottom: 15px;
+/* Section Styling (No separate white boxes) */
+.content-box section {
+    margin-bottom: 20px;
 }
 
-/* Paragraph Styling */
-p {
+.content-box section h2 {
+    font-size: 1.8em;
+    color: black; /* Black text color for section titles */
+    margin-bottom: 10px;
+}
+
+.content-box section p {
     font-size: 1.1em;
-    color: #555;
+    color: black;  /* Black text color for paragraphs */
 }
 
 /* Footer Styling */
@@ -95,30 +108,9 @@ footer {
     color: white;
     padding: 15px 0;
     text-align: center;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2.5em;
-        position: static;  /* Let it flow naturally on small screens */
-        text-align: left;
-    }
-
-    header p {
-        margin-left: 0;
-    }
-
-    nav ul {
-        flex-direction: column;
-        margin-left: 0;
-    }
-
-    nav ul li {
-        margin-bottom: 10px;
-    }
-
-    main {
-        padding: 0 20px;
-    }
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 0;
+    left: 0;
 }
