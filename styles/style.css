@@ -135,8 +135,7 @@ footer {
 }
 
 
-
-
+/* Recipe Styling */
 
 .container-recipe {
     background-color: #F0983E;
@@ -152,15 +151,16 @@ footer {
     color: white;
 }
 
+#guacamole {
+    width: 250px; 
+    height: 250px;
+}
+
 #ingredients{
     width: 250px; 
     height: 250px;
 }
 
-#guacamole {
-    width: 250px; 
-    height: 250px;
-}
 
 #recipe-page-body{
     max-width: 1300px;
