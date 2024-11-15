@@ -1,0 +1,33 @@
+.img-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 90%;
+    margin: 0em auto;
+    padding: 1em;
+    gap: 2em;
+}
+
+.img-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 25%;
+    min-width: 15.625em;
+    height: 31.25em;
+    background-color: #fbf8e5;
+    border-radius: 0.625em;
+    padding: 0.625em;
+}
+
+.img-card  img {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.img-card  h2 {
+    font-weight: bold;
+    text-align: center;
+}
