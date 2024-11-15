@@ -161,53 +161,6 @@ footer {
     height: 250px;
 }
 
-*{
-    margin: 0;
-}
-
-body {
-    background-image: url("/assets/avocado-background-opacity-20.png");
-    background-repeat: repeat-y/x;
-    background-color: #FFF9D1;
-    background-size: 90%;
-    
-}
-
-.nav-bar {
-    display: flex;
-    color: #3A3F87; 
-    /* background-color: #3A3F87; */
-    background-color: #5DC7A4;
-    justify-content: space-between;
-    padding: 2% 5%;
-    opacity: 80%;
-}
-
-.nav-bar-links {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 10%;
-}
-
-.nav-bar-links p {
-    border: 1px solid #5DC7A4;
-    padding: 2.5% 5%;
-    background-color: #5DC7A4;
-    border-radius: 10%;
-}
-
-footer {
-    background-color: #CF3E81;
-    padding: 2rem 2rem;
-    position: fixed;
-    bottom: 0;
-    text-align: center;
-    width: 100%;
-    color: #FFF9D1;
-    text-align: left;
-    }
-
 #recipe-page-body{
     max-width: 1300px;
     margin-inline: auto;
