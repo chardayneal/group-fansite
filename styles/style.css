@@ -1,11 +1,30 @@
-* {
-    background-color: #FFF9D1;
+
+#ingredients {
+    width: 250px; 
+    height: 250px;
+}
+
+#guacamole {
+    width: 250px; 
+    height: 250px;
 }
 
 
-img {
-    width: 250px; 
-    height: 250px;
+.container-recipe {
+    background-color: #F0983E;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 50vh;
+    width: 100vw;
+}
+
+
+h1,
+p,
+h2 {
+    text-align: center;
 }
 
 
