@@ -12,7 +12,6 @@ body {
     padding: 0;
     margin: 0;
     line-height: 1.6;
-    
     background-image: url('../assets/avocado-pattern.jpg');
     background-size: contain;
     background-repeat: repeat;
@@ -20,6 +19,7 @@ body {
     background-position: center;
     background-color: rgba(255, 249, 209, 0.7);
     background-blend-mode: overlay;
+    padding-top: 80px;  /* Added padding for fixed header */
 }
 
 /* Header Styling */
@@ -32,8 +32,10 @@ header {
     align-items: center;
     width: 100%;
     box-sizing: border-box;
-    position: relative;
-    padding-top: 20px;
+    position: fixed;  /* Fix the header to the top */
+    top: 0;
+    left: 0;
+    z-index: 1000;  /* Ensure it stays above other content */
 }
 
 header h1 {
@@ -65,6 +67,8 @@ nav ul li a:hover {
 /* Main Content Styling */
 main {
     padding: 40px 20px;
+    padding-top: 120px;  /* Adjust padding to avoid overlap with fixed header */
+    padding-bottom: 60px;  /* Add padding at the bottom to ensure content doesn't stick to footer */
 }
 
 /* Unified Content Box (Single Orange Box) */
@@ -72,18 +76,15 @@ main {
     background-color: #F0983E;  /* Orange background */
     padding: 20px;
     max-width: 900px;  /* Set a maximum width */
-    height: 400px;  /* Set a fixed height to make it more square */
-    margin: 0;  /* Remove default margin */
-    position: absolute;  /* Use absolute positioning */
-    top: 50%;  /* Position the box 50% from the top of the viewport */
-    left: 50%;  /* Position the box 50% from the left of the viewport */
-    transform: translate(-50%, -50%);  /* Offset the box to truly center it */
+    min-height: 400px;  /* Use min-height instead of fixed height */
+    margin: 0 auto;  /* Center the content-box horizontally */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     color: black;  /* Black text color */
     display: flex;
     flex-direction: column;
-    justify-content: space-between;  /* Space out sections inside the box */
+    justify-content: flex-start;  /* Align content from the top */
+    overflow: hidden;  /* Prevent overflow */
 }
 
 /* Section Styling (No separate white boxes) */
@@ -113,4 +114,25 @@ footer {
     position: fixed;
     bottom: 0;
     left: 0;
+    z-index: 1000;  /* Ensure it stays above other content */
+}
+
+/* Make the layout responsive for smaller screens */
+@media screen and (max-width: 768px) {
+    .content-box {
+        width: 90%;  /* Adjust the width to fit smaller screens */
+        padding: 10px;  /* Reduce padding for smaller screens */
+    }
+
+    .content-box section h2 {
+        font-size: 1.5em;  /* Adjust font size for section headers */
+    }
+
+    .content-box section p {
+        font-size: 1em;  /* Adjust font size for paragraphs */
+    }
+
+    main {
+        padding-top: 140px;  /* Adjust padding for smaller screens if header height is bigger */
+    }
 }
