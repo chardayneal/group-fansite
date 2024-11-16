@@ -1,22 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Rye&display=swap');
 * {
     margin: 0;
+    cursor: url('/assets/avocado.cur'), auto;
 }
 
-#header {
-    text-align: center;
-    padding: 2.5% 0 2% 0;
-    color: #3A3F87;
-    font-weight: 900;
-}
-
-body {
-    background-image: url("/assets/avocado-background-opacity-20.png");
+/* body { */
+    /* background-image: url("/assets/avocado-background-opacity-20.png"); */
+    /* background-image: url('../assets/avocado-pattern.jpg'); */
     /* background-repeat: repeat, space; */
-    background-color: #FFF9D1; 
-    background-size: 5%;
-    max-width: 100%;
-}
+    /* background-color: #FFF9D1;  */
+    /* background-size: 5%; */
+    /* max-width: 100%; */
+/* } */
 
 #title {
     font-family: Rye;
