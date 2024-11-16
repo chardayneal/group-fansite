@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Rye&display=swap');
 * {
     margin: 0;
-    cursor: url('/assets/avocado.cur'), auto;
+    cursor: url('../assets/avocado.cur'), auto;
 }
 
 /* body { */
