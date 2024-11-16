@@ -96,6 +96,10 @@ body {
 #footer-links ul {
     display: flex; 
     justify-content: center;
+    list-style-type: none;
+}
+#footer-links li {
+    text-decoration: none;
 }
 #footer-links a {
     font-family: "Raleway", sans-serif;
