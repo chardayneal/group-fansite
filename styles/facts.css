@@ -1,34 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     padding: 0;
     margin: 0;
 }
 
-.banner {
-    width: 85%;
+body {
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.fact-container {
-    background-color: #f0983e;
-    display: flex;
-    justify-content: center;
-    gap: 6rem;
-    align-items: center;
-    margin:0 auto 2rem;
-    width: 92%;
-    padding: 1rem 0;
-    border-radius: 15px;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
-}
-
-.row-reverse {
-    flex-direction: row-reverse;
-}
-
-section img {
-    width: 25%;
+#logo {
+    width: 150px;
     height: auto;
 }
 
-.fact-text {
-    width: 45%;
+ #hero {
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+ }
+ #hero-text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: -5rem;
+ }
+ #hero-text h2,
+ #hero-text p{
+    text-align:start;
+ }
+ #hero-text h2 {
+    font-size: 4em;
+    line-height:normal;
+    margin-bottom: 1.25rem;
+ }
+ #hero-text p {
+    font-size: 1.25em;
+ }
+#hero img {
+    flex: 1;
+    width:50%;
+}
+
+.fact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.fact-container #fact-text {
+    width: 70%;
+    text-align: center;
+}
+
+
+/* testing footer css */
+#footer {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    padding: 1.5em 0;
+}
+
+#footer-text {
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    color: #FFF9D1;
+    width: 70%;
+    border-bottom: 1px solid #FFF9D1;
+    padding: 0 0 .15em .85em;
+    margin: 1em auto;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    
+}
+#footer-text span{
+    font-size: .75em;
+}
+
+#footer-links {
+    width: 90%;
+    margin: auto;
+}
+#footer-links ul {
+    display: flex; 
+    justify-content: center;
+}
+#footer-links a {
+    font-family: "Raleway", sans-serif;
+    font-size: .9em;
+    font-weight: 500;
+    color: #FFF9D1;
+}
+#footer p {
+    color: black;
+    font-size: .75em;
+    font-weight: 400;
+    margin-top: 2em;
 }

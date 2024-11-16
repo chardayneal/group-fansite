@@ -60,15 +60,47 @@
 }
 
 
-footer {
-    background-color: #CF3E81;
-    padding: 2rem 2rem;
+#footer {
+    width: 100%;
     position: relative;
     bottom: 0;
-    text-align: center;
-    max-width: 100%;
-    color: #FFF9D1;
-    text-align: left;
-    margin-top: 2rem;
+    padding: 1.5em 0;
+}
 
+#footer-text {
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    color: #FFF9D1;
+    width: 70%;
+    border-bottom: 1px solid #FFF9D1;
+    padding: 0 0 .15em .85em;
+    margin: 1em auto;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    
+}
+#footer-text span{
+    font-size: .75em;
+}
+
+#footer-links {
+    width: 90%;
+    margin: auto;
+}
+#footer-links ul {
+    display: flex; 
+    justify-content: center;
+}
+#footer-links a {
+    font-family: "Raleway", sans-serif;
+    font-size: .9em;
+    font-weight: 500;
+    color: #FFF9D1;
+}
+#footer p {
+    color: black;
+    font-size: .75em;
+    font-weight: 400;
+    margin-top: 2em;
 }
