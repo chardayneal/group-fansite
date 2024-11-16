@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Rye&display=swap');
 * {
     margin: 0;
-    cursor: url('/assets/avocado.cur'), auto;
+    cursor: url('../assets/avocado.cur'), auto;
 }
 
 /* body { */
@@ -59,13 +59,21 @@
     background-color:#5DC7A4;
 }
 
-
-#footer {
+footer {
+    background-color: #CF3E81;
+    text-align: center;
     width: 100%;
     position: relative;
     bottom: 0;
     padding: 1.5em 0;
 }
+
+/* #footer {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    padding: 1.5em 0;
+} */
 
 #footer-text {
     font-family: "Raleway", sans-serif;
