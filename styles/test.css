@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Rye&display=swap');
 * {
     margin: 0;
-    cursor: url('/assets/avocado.cur'), auto;
+    cursor: url('../assets/avocado.cur'), auto;
 }
 
 /* body { */
@@ -13,6 +13,24 @@
     /* max-width: 100%; */
 /* } */
 
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #FFF9D1;
+    color: #333;
+    padding: 0;
+    margin: 0;
+    line-height: 1.6;
+    background-image: url('../assets/avocado-pattern.jpg');
+    background-size: contain;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: rgba(255, 249, 209, 0.7);
+    /* background-blend-mode: overlay; */
+    /* padding-top: 80px; */
+    /* Added padding for fixed header */
+}
+
 #title {
     font-family: Rye;
 }
@@ -23,7 +41,7 @@
     color: #FFF9D1;
     justify-content: space-between;
     padding: 2% 5%;
-    opacity: 80%;
+    /* opacity: 100%; */
 }
 
 .nav-bar-links {
@@ -59,6 +77,12 @@
     background-color:#5DC7A4;
 }
 
+footer {
+    background-color: #CF3E81;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
 
 #footer {
     width: 100%;
