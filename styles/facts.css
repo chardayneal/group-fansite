@@ -7,13 +7,7 @@
 
 body {
     padding: 0;
-    font-family: "Poppins", sans-serif;
-    cursor: url(../assets/avocado_icon.png), auto;
-}
-
-header {
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 #logo {
@@ -21,31 +15,46 @@ header {
     height: auto;
 }
 
-.fact-container {
-    background-color: #f0983e;
+ #hero {
+    width: 100%;
     display: flex;
+    margin: 0 auto;
+ }
+ #hero-text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    gap: 6rem;
+    margin-right: -5rem;
+ }
+ #hero-text h2,
+ #hero-text p{
+    text-align:start;
+ }
+ #hero-text h2 {
+    font-size: 4em;
+    line-height:normal;
+    margin-bottom: 1.25rem;
+ }
+ #hero-text p {
+    font-size: 1.25em;
+ }
+#hero img {
+    flex: 1;
+    width:50%;
+}
+
+.fact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin:0 auto 2rem;
-    width: 92%;
-    padding: 1rem 0;
-    border-radius: 15px;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+}
+.fact-container #fact-text {
+    width: 70%;
+    text-align: center;
 }
 
-.row-reverse {
-    flex-direction: row-reverse;
-}
-
-section img {
-    width: 25%;
-    height: auto;
-}
-
-.fact-text {
-    width: 45%;
-}
 
 /* testing footer css */
 #footer {
