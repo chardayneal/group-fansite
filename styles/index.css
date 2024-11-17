@@ -22,47 +22,6 @@ body {
     /* padding-top: 80px;   */
 }
 
-/* Header Styling
-header {
-    background-color: #5DC7A4;  /* Background color */
-    /* color: black;
-    padding: 15px 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    box-sizing: border-box;
-    position: fixed;  /* Fix the header to the top */
-    /* top: 0;
-    left: 0;
-    z-index: 1000;  
-} */
-
-/* header h1 {
-    font-size: 3em;
-    margin: 0;
-    color: black;
-} 
-
-nav ul {
-    display: flex;
-    list-style-type: none;
-}
-
-nav ul li {
-    margin-left: 20px;
-}
-
-nav ul li a {
-    color: black;
-    text-decoration: none;
-    font-size: 1.2em;
-    transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #FFF9D1;
-}
 
 /* Main Content Styling */
 main {
@@ -73,18 +32,18 @@ main {
 
 /* Unified Content Box (Single Orange Box) */
 .content-box {
-    background-color: #F0983E;  /* Orange background */
+    background-color: #F0983E;  
     padding: 20px;
-    max-width: 900px;  /* Set a maximum width */
-    min-height: 400px;  /* Use min-height instead of fixed height */
-    margin: 0 auto;  /* Center the content-box horizontally */
+    max-width: 900px;  
+    min-height: 400px;  
+    margin: 0 auto;  
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    color: black;  /* Black text color */
+    color: darkblue;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;  /* Align content from the top */
-    overflow: hidden;  /* Prevent overflow */
+    justify-content: flex-start;
+    overflow: hidden; 
 }
 
 /* Section Styling (No separate white boxes) */
@@ -94,30 +53,16 @@ main {
 
 .content-box section h2 {
     font-size: 1.8em;
-    color: black; /* Black text color for section titles */
+    color: darkblue; 
     margin-bottom: 10px;
 }
 
 .content-box section p {
     font-size: 1.1em;
-    color: black;  /* Black text color for paragraphs */
+    color: darkblue;  
 }
 
-/* Footer Styling */
-/* footer {
-    background-color: #CF3E81;
-    color: white;
-    padding: 15px 0;
-    text-align: center;
-    width: 100%;
-    box-sizing: border-box;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    z-index: 1000;  
-} */
 
-/* Make the layout responsive for smaller screens */
 @media screen and (max-width: 768px) {
     .content-box {
         width: 90%;  /* Adjust the width to fit smaller screens */
