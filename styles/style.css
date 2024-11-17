@@ -84,6 +84,7 @@ footer {
     position: relative;
     bottom: 0;
     padding: 1.5em 0;
+    opacity: 90%;
 }
 
 #footer-text {
@@ -111,6 +112,7 @@ footer {
     display: flex; 
     justify-content: center;
     list-style-type: none;
+    gap: 1rem
 }
 #footer-links li {
     text-decoration: none;
