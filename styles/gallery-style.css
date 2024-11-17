@@ -2,24 +2,20 @@
     text-align: center;
     padding: 2.5% 0 2% 0;
     color: #3A3F87;
-    /* font-family:Helvetica, Arial sans-serif;
-    border-radius: 0.625em;
-    background-color: #FFF9D1;
-    margin: 1em 15em; */
+    font-size: xx-large;
 }
 
 .img-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    /* justify-content: center; */
+    justify-content: space-around;
     width: 80%;
     margin: 0em auto;
-    /* padding: 2em; */
     padding: 4em;
     gap: 2em;
     background-color: #FFF9D1;
-    /* border-radius: 0.625em; */
+    border-radius: 0.625em;
+    margin-bottom: 2em;
 }
 
 .img-card {
@@ -29,14 +25,12 @@
     width: 15%;
     min-width: 15.625em;
     height: 21.25em;
-    /* background-color: #fbf8e5; */
     background-color: #F0983E;
     border-radius: 0.625em;
     padding: 0.625em;
 }
 
 .img-card:hover {
-    /* background-color: #F0983E; */
     background-color: #fbf8e5;
 }
 
