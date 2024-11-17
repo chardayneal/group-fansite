@@ -2,6 +2,7 @@
     text-align: center;
     padding: 2.5% 0 2% 0;
     color: #3A3F87;
+    font-size: xx-large;
     /* font-family:Helvetica, Arial sans-serif;
     border-radius: 0.625em;
     background-color: #FFF9D1;
@@ -11,7 +12,7 @@
 .img-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     /* justify-content: center; */
     width: 80%;
     margin: 0em auto;
@@ -19,7 +20,8 @@
     padding: 4em;
     gap: 2em;
     background-color: #FFF9D1;
-    /* border-radius: 0.625em; */
+    border-radius: 0.625em;
+    margin-bottom: 2em;
 }
 
 .img-card {

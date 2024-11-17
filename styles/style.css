@@ -19,7 +19,7 @@ body {
     color: #333;
     padding: 0;
     margin: 0;
-    line-height: 1.6;
+    /* line-height: 1.6; */
     background-image: url('../assets/avocado-pattern.jpg');
     background-size: contain;
     background-repeat: repeat;
@@ -85,13 +85,6 @@ footer {
     bottom: 0;
     padding: 1.5em 0;
 }
-
-/* #footer {
-    width: 100%;
-    position: relative;
-    bottom: 0;
-    padding: 1.5em 0;
-} */
 
 #footer-text {
     font-family: "Raleway", sans-serif;
