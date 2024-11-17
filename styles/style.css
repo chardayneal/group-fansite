@@ -4,15 +4,6 @@
     cursor: url('../assets/avocado.cur'), auto;
 }
 
-/* body { */
-    /* background-image: url("/assets/avocado-background-opacity-20.png"); */
-    /* background-image: url('../assets/avocado-pattern.jpg'); */
-    /* background-repeat: repeat, space; */
-    /* background-color: #FFF9D1;  */
-    /* background-size: 5%; */
-    /* max-width: 100%; */
-/* } */
-
 body {
     font-family: 'Arial', sans-serif;
     background-color: #FFF9D1;
@@ -27,8 +18,6 @@ body {
     background-position: center;
     background-color: rgba(255, 249, 209, 0.7);
     background-blend-mode: overlay;
-    /* padding-top: 80px; */
-    /* Added padding for fixed header */
 }
 
 #title {
