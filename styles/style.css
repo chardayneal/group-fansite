@@ -41,7 +41,7 @@ body {
     color: #FFF9D1;
     justify-content: space-between;
     padding: 2% 5%;
-    opacity: 100%;
+    opacity: 90%;
 }
 
 .nav-bar-links {
@@ -84,6 +84,7 @@ footer {
     position: relative;
     bottom: 0;
     padding: 1.5em 0;
+    opacity: 90%;
 }
 
 /* #footer {
