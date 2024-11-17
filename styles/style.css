@@ -1,143 +1,137 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Rye&display=swap');
 * {
     margin: 0;
+    cursor: url('../assets/avocado.cur'), auto;
+    cursor: url('../assets/avocado.cur'), auto;
 }
 
-body, h1, h2, p, nav, ul, li, a {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* body { */
+    /* background-image: url("/assets/avocado-background-opacity-20.png"); */
+    /* background-image: url('../assets/avocado-pattern.jpg'); */
+    /* background-repeat: repeat, space; */
+    /* background-color: #FFF9D1;  */
+    /* background-size: 5%; */
+    /* max-width: 100%; */
+/* } */
 
 body {
-    font-family: 'Arial', sans-serif; /* Font styling */
-    background-color: #FFF9D1;  /* Background color */
-    color: #333;  /* Default text color */
-    padding: 20px;
-    line-height: 1.6;  /* For better readability */
+    font-family: 'Arial', sans-serif;
+    background-color: #FFF9D1;
+    color: #333;
+    padding: 0;
+    margin: 0;
+    line-height: 1.6;
+    background-image: url('../assets/avocado-pattern.jpg');
+    background-size: contain;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: rgba(255, 249, 209, 0.7);
+    /* background-blend-mode: overlay; */
+    /* padding-top: 80px; */
+    /* Added padding for fixed header */
+}
+
+#title {
+    font-family: Rye;
+}
+.nav-bar {
+    display: flex;
     max-width: 100%;
+    background-color: #5DC7A4;
+    color: #FFF9D1;
+    justify-content: space-between;
+    padding: 2% 5%;
+    /* opacity: 100%; */
 }
 
-/* Header Styling */
-header {
-    background-color: #5DC7A4;  /* Background color */
-    color: white;
-    padding: 20px 40px;  /* Add extra padding for space */
+.nav-bar-links {
     display: flex;
-    justify-content: space-between;  /* To push title to the left and menu to the right */
-    align-items: center;  /* Vertically align items */
-    position: relative;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10%;
 }
 
-header h1 {
-    font-size: 3em;
-    margin: 0;  /* Remove any default margins */
-    position: absolute;
-    top: 20px;  /* Adjust the vertical position */
-    left: 20px;  /* Adjust the horizontal position */
-    color: black;  /* Change text color to black */
+.nav-bar-links li {
+    padding: 8% 5%;
+    background-color:#CF3E81;
+    border-radius: 20%;
+    list-style: none;
 }
 
-header p {
-    font-size: 1.2em;
-    margin-top: 40px;  /* Adds spacing below the title */
-    margin-left: 20px;  /* Align with the title on the left */
-}
-
-/* Navigation Styling */
-nav {
-    /* No extra changes needed here, as the flexbox is handled by the header */
-}
-
-nav ul {
-    display: flex;
-    list-style-type: none;
-}
-
-nav ul li {
-    margin-left: 20px;  /* Space between navigation items */
-}
-
-nav ul li a {
-    color: black;  /* Change text color to black */
+.nav-bar-links a {
+    color: #FFF9D1;
     text-decoration: none;
-    font-size: 1.2em;
-    transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
-    color: #FFF9D1;  /* Hover effect using the background color */
+/* visited link */
+.nav-bar-links a:visited {
+    color: #FFF9D1;
 }
 
-/* Main Content Styling */
-main {
-    max-width: 1200px;
-    margin: 40px auto;
-    text-align: center;
+/* selected link */
+.nav-bar-links a:active {
+    color: blue;
 }
 
-/* Section Styling */
-section {
-    margin-bottom: 40px;
+.nav-bar-links li:hover{
+    background-color:#5DC7A4;
 }
 
-h1,
-h2,
-p,
-footer {
-    text-align: center;
-}
-
-/* Section Titles */
-h1{
-    font-size: 3em;
-    color: #3A3F87;
-    margin-bottom: 15px;
-}
-h2 {
-    font-size: 2em;
-    color: #3A3F87;
-    margin-bottom: 15px;
-}
-
-/* Paragraph Styling */
-p {
-    font-size: 1.1em;
-    color: #555;
-}
-
-/* Footer Styling */
 footer {
     background-color: #CF3E81;
-    color: white;
-    padding: 15px 0;
     text-align: center;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    padding: 1.5em 0;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2.5em;
-        position: static;  /* Let it flow naturally on small screens */
-        text-align: left;
-    }
+/* #footer {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    padding: 1.5em 0;
+} */
 
-    header p {
-        margin-left: 0;
-    }
-
-    nav ul {
-        flex-direction: column;
-        margin-left: 0;
-    }
-
-    nav ul li {
-        margin-bottom: 10px;
-    }
-
-    main {
-        padding: 0 20px;
-    }
+#footer-text {
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    color: #FFF9D1;
+    width: 70%;
+    border-bottom: 1px solid #FFF9D1;
+    padding: 0 0 .15em .85em;
+    margin: 1em auto;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    
+}
+#footer-text span{
+    font-size: .75em;
 }
 
-
+#footer-links {
+    width: 90%;
+    margin: auto;
+}
+#footer-links ul {
+    display: flex; 
+    justify-content: center;
+    list-style-type: none;
+}
+#footer-links li {
+    text-decoration: none;
+}
+#footer-links a {
+    font-family: "Raleway", sans-serif;
+    font-size: .9em;
+    font-weight: 500;
+    color: #FFF9D1;
+}
+#footer p {
+    color: black;
+    font-size: .75em;
+    font-weight: 400;
+    margin-top: 2em;
+}
