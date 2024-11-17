@@ -2,6 +2,7 @@
 * {
     margin: 0;
     cursor: url('../assets/avocado.cur'), auto;
+    cursor: url('../assets/avocado.cur'), auto;
 }
 
 /* body { */
@@ -13,6 +14,24 @@
     /* max-width: 100%; */
 /* } */
 
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #FFF9D1;
+    color: #333;
+    padding: 0;
+    margin: 0;
+    line-height: 1.6;
+    background-image: url('../assets/avocado-pattern.jpg');
+    background-size: contain;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: rgba(255, 249, 209, 0.7);
+    /* background-blend-mode: overlay; */
+    /* padding-top: 80px; */
+    /* Added padding for fixed header */
+}
+
 #title {
     font-family: Rye;
 }
@@ -23,7 +42,7 @@
     color: #FFF9D1;
     justify-content: space-between;
     padding: 2% 5%;
-    opacity: 100%;
+    /* opacity: 100%; */
 }
 
 .nav-bar-links {
