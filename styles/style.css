@@ -10,7 +10,6 @@ body {
     color: #333;
     padding: 0;
     margin: 0;
-    /* line-height: 1.6; */
     background-image: url('../assets/avocado-pattern.jpg');
     background-size: contain;
     background-repeat: repeat;
@@ -20,10 +19,6 @@ body {
     background-blend-mode: overlay;
 }
 
-#title {
-    font-family: Rye;
-    font-size: 2rem;
-}
 
 .nav-bar {
     display: flex;
@@ -31,8 +26,13 @@ body {
     background-color: #5DC7A4;
     color: #FFF9D1;
     justify-content: space-between;
-    padding: 2% 6%;
+    padding: 1.75% 10%;
     opacity: 90%;
+}
+
+#title {
+    font-family: Rye;
+    font-size: 2rem;
 }
 
 .nav-bar-links {
@@ -40,18 +40,16 @@ body {
     flex-direction: row;
     justify-content: center;
     gap: 10%;
-    padding-right: 1em;
 }
 
 .nav-bar-links li {
-    padding: 8% 5%;
+    padding: 6% 5%;
     background-color:#CF3E81;
-    border-radius: 20%;
+    border-radius: 0.625em;
     list-style: none;
 }
 
 .nav-bar-links a {
-    color: #FFF9D1;
     text-decoration: none;
 }
 
