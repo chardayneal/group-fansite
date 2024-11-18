@@ -24,6 +24,7 @@ body {
     font-family: Rye;
     font-size: 2rem;
 }
+
 .nav-bar {
     display: flex;
     max-width: 100%;
@@ -39,6 +40,7 @@ body {
     flex-direction: row;
     justify-content: center;
     gap: 10%;
+    padding-right: 1em;
 }
 
 .nav-bar-links li {
@@ -63,7 +65,7 @@ body {
     color: blue;
 }
 
-.nav-bar-links li:hover{
+.nav-bar-links li:hover {
     background-color:#5DC7A4;
 }
 
